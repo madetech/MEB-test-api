@@ -42,7 +42,7 @@ jobs:
 
     - name: Archive Application
       run: |
-        zip -qq -r ./buildartifacts/MEBTestApi.zip ./MEBTestApi/build
+        zip -qq -r ./buildartifacts/MEBTestApi.zip . -i ./MEBTestApi/build
 
     - name: Upload Application to Build Artifact
       continue-on-error: false
